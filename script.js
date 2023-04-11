@@ -5,7 +5,7 @@
     const body = document.querySelector('body');
     const banner = document.querySelector('#banner');
     const sections = document.querySelectorAll('section')
-    const face = document.querySelector('#face');
+    // const face = document.querySelector('#face');
     let mode = 'dark';
 
     button.addEventListener('click', function() {
@@ -13,7 +13,7 @@
             body.className = 'switch';
             banner.className = 'switch';
             button.className = 'switch';
-            face.className = 'switch';
+            // face.className = 'switch';
             for (const section of sections) {
                 section.className = 'switch';
             }
@@ -22,7 +22,7 @@
             body.removeAttribute('class');
             banner.removeAttribute('class');
             button.removeAttribute('class');
-            face.removeAttribute('class');
+            // face.removeAttribute('class');
             for (const section of sections) {
                 section.removeAttribute('class');
             }

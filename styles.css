@@ -42,7 +42,7 @@ header {
 	place-items: center;
     border: 10px #73E691 outset;
 
-    /* background-image: url(images/1x/Artboard\ 2.png); */
+    background-image: url(images/1x/Artboard\ 2.png);
 }
 
 /* .hidden {
@@ -56,18 +56,22 @@ header {
 }
  */
 
-#face{
-    background-image: url(images/1x/Artboard\ 2.png);
-}
-#face.switch{
-    background-image: url(images/1x/Artboard\ 2\ copy.png);
-}
-
 #banner.switch {
     background-color: #0A995C;
     color: rgb(235, 235, 235);
     transition: all 2s;
     border: 10px #145959 outset;
+
+    background-image: url(images/1x/Artboard\ 2\ copy.png);
+}
+
+/* #face{
+    overflow: hidden;
+    display: grid;
+	place-items: center;
+} */
+#face.switch{
+    /* background-image: url(images/1x/Artboard\ 2\ copy.png); */
 }
 
 main {
