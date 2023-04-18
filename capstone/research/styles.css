@@ -4,23 +4,29 @@ header{
     background-color: aqua;
     text-align: center; */
 
-    padding-left: 20px;
+    background-color:brown;
+
     padding-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
     font-size: 40px;
+    color: antiquewhite;
 }
 
 body{
     max-width: 1200px;
     height: 750px;
     margin: auto;
+    /* padding-left: 500px; */
+    background-color: antiquewhite;
 }
 main{
     display: flex;
+    padding-top: 40px;
 }
 section{
-    padding-top: 0px;
     width: 900px;
-    padding: 20px;
+    padding-top: 20px;
     /* padding-right: 100px; */
     /* background-color: blanchedalmond; */
 }
@@ -28,11 +34,13 @@ section{
 p{
     width: 800px;
     font-size: 40px;
+    color: brown;
+    /* padding-left: 20px; */
 }
 div{
-    padding-left: 00px;
+   
 }
 img{
     /* padding-left: 00px; */
-    width: 500px;
+    width: 400px;
 }
