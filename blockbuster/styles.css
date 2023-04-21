@@ -1,0 +1,60 @@
+#myVideo{
+    position: fixed;
+    right:0;
+    bottom:0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+main{
+    background-color: black;
+    opacity: 95%;
+}
+/* #bg{
+    background-color: #262626;
+    opacity: 60%;
+
+    position: fixed;
+    right:0;
+    bottom:0;
+    min-width: 100%;
+    min-height: 100%;
+} */
+h1{
+    font-size: 170px;
+    color:azure;
+    padding-top: 300px;
+
+    text-shadow: 5px 5px 10px #262626;
+    text-align: center;
+    /* font-family: 'Mouse Memoirs', sans-serif; */
+}
+
+.one{
+    /* padding-top: 800px; */
+}
+
+section{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.scroll-container{
+    height:150vh;
+    position: relative;
+    /* padding-left: 100px; */
+}
+
+div{
+    padding-left: 100px;
+    padding-right: 100px;
+
+    /* transition-property: opacity, visibility;
+    transition-duration: 3s;
+    transition-timing-function: ease; */
+}
+
+.fadeIn{
+    transition-property: opacity, visibility;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+}
