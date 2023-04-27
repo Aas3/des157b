@@ -27,6 +27,7 @@ main{
 section{
     width: 900px;
     padding-top: 20px;
+    /* display: inline-block; */
     /* padding-right: 100px; */
     /* background-color: blanchedalmond; */
 }
@@ -36,11 +37,14 @@ p{
     font-size: 40px;
     color: brown;
     /* padding-left: 20px; */
+    display: inline-block;
+    padding-top: 50px;
 }
 div{
-   
+  
 }
 img{
     /* padding-left: 00px; */
     width: 400px;
+    padding-top: 50px;
 }
