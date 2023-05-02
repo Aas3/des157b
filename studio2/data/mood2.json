@@ -1,0 +1,34 @@
+{
+    "point1" : {
+        "day" : "Sunday the 16th",
+        "reason" : "4hr 10min"
+    },
+    "point2" : {
+        "day" : "Monday 17th",
+        "reason" : "3hr 40min"
+    },
+    "point3" : {
+        "day" : "Tuesday 18th",
+        "reason" : "6hr 40min"
+    },
+    "point4" : {
+        "day" : "Wednesday 19th",
+        "reason" : "5hr 50min"
+    },
+    "point5" : {
+        "day" : "Thursday 20th",
+        "reason" : "5hr"
+    },
+    "point6" : {
+        "day" : "Friday 21st",
+        "reason" : "3hr 40min"
+    },
+    "point7" : {
+        "day" : "Saturday 22nd",
+        "reason" : "7hr 10min"
+    },
+    "point8" : {
+        "day" : "Sunday 23rd",
+        "reason" : "7hr 50min"
+    }
+}
