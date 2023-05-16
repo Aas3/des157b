@@ -28,18 +28,20 @@ img{
 
 #clouds{
     position:fixed;
-    padding-right: -1000px;
+    /* padding-bottom: 200px; */
     z-index: 2 ;
 }
 
 #sheep{
-    padding-top: 200px;
+    position: fixed;
+    padding-top: 100px;
+    transform-origin: center center;
 }
 
 
-.rotate-sheep {
+/*.rotate {
     transform: rotate(-45deg);
-}
+}*/
 
 
 
