@@ -1,0 +1,91 @@
+body{
+    /* background-color: aqua; */
+    overflow: hidden;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
+}
+
+/* //////// slides ////////// */
+.slide{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+.one{
+    background-color: #A2C79F;
+}
+
+.two{
+    background-color:#799476;
+}
+.three{
+    background-color:#A2C79F;
+}
+.four{
+    background-color: #799476;
+}
+
+.outer-container{
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);;
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+
+/* //////// content ////////// */
+
+.content-container{
+   /* background-color: aqua; */
+   padding: 25px;
+   align-content: center;
+   place-items: center;
+   /* padding-top: ; */
+   
+    /* padding-top: 200px; */
+    padding-left: 100px;
+
+    font-family: 'Noto Serif Display', serif;
+}
+h1{
+    padding-top: 150px;
+    font-size: 200px;
+}
+p{
+    font-size: 40px;
+    text-align: center;
+}
