@@ -1,0 +1,192 @@
+#myVideo{
+  position: fixed;
+  right:0;
+  bottom:0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+
+  /* background-color: #799476; */
+}
+
+
+body{
+  /* background-color: aqua; */
+  overflow: hidden;
+  /* overflow-y: hidden;
+  overflow-x: hidden; */
+  /* cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" /></svg>') 8 8, auto; */
+  display: flex;
+  flex-direction: column;
+  /* background: none; */
+  background-color: #799476;
+}
+
+
+/* ///////////////////////// SLIDES /////////////////////// */
+
+.slide{
+  width: 100vw;
+  height: 100vh;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.one{
+  /* background-color: 799476;
+  opacity: 20%; */
+  z-index: 2;
+}
+
+.outer-container{
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);;
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  /* bottom: 0; */
+}
+
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  /* background-color: transparent; */
+  border-radius: 10px
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 10px
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: #f1f1f1; */
+  background-color: transparent;
+  border-radius: 10px
+}
+  
+/* ///////////////////////// SECTIONS /////////////////////// */
+section{
+  height:150vh;
+  position: relative;
+}
+
+header{
+  width: 100vw;
+  height: 100vh;
+}
+
+/*// overlays // */
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.showing {
+  visibility: visible;
+  opacity: 100;
+  /* z-index: 3; */
+
+  /* transition-property: opacity, visibility;
+  transition-duration: 3s;
+  transition-timing-function: ease-in; */
+
+  /* transition: opacity 0.5s ease-in; */
+}
+
+
+/*// section 2 //*/
+#one{
+  /* width: 6000px; */
+}
+#two{
+  background-color:#262626;
+  
+  /* transition-property: opacity, visibility;
+  transition-duration: 3s;
+  transition-timing-function: ease-in; */
+}
+#poppies{
+  height: 900px;
+}
+
+
+#three{
+  background-color:aqua;
+  opacity: 20%;
+}
+#four{
+  background-color:purple;
+}
+/* /////////////////////////// CONTENT /////////////////////////////// */
+
+.content-container{
+  /* background-color: aqua; */
+  /* padding: 25px; */
+  align-content: center;
+  place-items: center;
+  /* padding-top: ; */
+  
+  /* padding-top: 200px; */
+  padding-left: 100px;
+
+  font-family: 'Noto Serif Display', serif;
+  /* background-color: aqua; */
+    
+}
+h1{
+  /* padding-top: 50px; */
+  top:0;
+  margin: none;
+  padding: none;
+  font-size: 250px;
+  color: azure;
+  opacity: 100%;
+  /* font-family: 'Playfair Display', serif; */
+}
+h2{
+  font-size: 150px;
+}
+
+/*///////////////////// CSS animtions ///////////////////////*/
+.ml12 {
+  /* font-weight: 200; */
+  /* font-size: 1.8em; */
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+  
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+p{
+  font-size: 40px;
+  text-align: center;
+  /* margin: none; */
+  color: aliceblue;
+}
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+}

@@ -1,0 +1,147 @@
+body{
+    /* background-color: aqua; */
+    overflow: hidden;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
+    /* cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" /></svg>') 8 8, auto; */
+    display: flex;
+  flex-direction: column;
+  /* background: none; */
+}
+
+
+
+/* //////// slides ////////// */
+.slide{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+.one{
+    background-color: #A2C79F;
+}
+
+.two{
+    background-color:#799476;
+}
+.three{
+    background-color:#A2C79F;
+}
+.four{
+    background-color: #799476;
+}
+
+.outer-container{
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);;
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    /* bottom: 0; */
+}
+
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    /* background-color: transparent; */
+    border-radius: 10px
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 10px
+  }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        /* background: #f1f1f1; */
+        background-color: transparent;
+        border-radius: 10px
+      }
+  
+
+/* //////// content ////////// */
+
+.content-container{
+   /* background-color: aqua; */
+   padding: 25px;
+   align-content: center;
+   place-items: center;
+   /* padding-top: ; */
+   
+    /* padding-top: 200px; */
+    padding-left: 100px;
+
+    font-family: 'Noto Serif Display', serif;
+}
+h1{
+    padding-top: 50px;
+    font-size: 120px;
+}
+
+.ml12 {
+    /* font-weight: 200; */
+    /* font-size: 1.8em; */
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+  }
+  
+  .ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+p{
+    font-size: 40px;
+    text-align: center;
+}
+.ml3 {
+    font-weight: 900;
+    font-size: 3.5em;
+  }
+
+
+
+  
+  /* /////////// SECTION 2 //////////// */
+  #slider {
+    display: flex;
+    position: absolute;
+    /* top:1500;
+    left: -120; */
+    height: 300px;
+    transition: all 60s linear;
+    padding-left: 300px;
+}
+
+#slider div img {
+    height: 100%;
+    display: block;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.a, .b {
+   display: flex;
+   height: 100%;
+}
