@@ -1,3 +1,7 @@
+html {
+  /* scroll-behavior: smooth; */
+}
+
 #myVideo{
   position: fixed;
   right:0;
@@ -11,14 +15,10 @@
 
 
 body{
-  /* background-color: aqua; */
-  overflow: hidden;
-  /* overflow-y: hidden;
-  overflow-x: hidden; */
-  /* cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" /></svg>') 8 8, auto; */
   display: flex;
-  flex-direction: column;
-  /* background: none; */
+  flex-direction: row;
+  /* overflow-x: auto; */
+  overflow: hidden;
   background-color: #799476;
 }
 
@@ -58,41 +58,73 @@ body{
 } */
 
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-  
-  /* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  /* background-color: transparent; */
-  border-radius: 10px
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-  border-radius: 10px
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  /* background: #f1f1f1; */
-  background-color: transparent;
-  border-radius: 10px
-}
   
 /* ///////////////////////// SECTIONS /////////////////////// */
-section{
-  height:150vh;
-  position: relative;
-}
 
 header{
-  width: 100vw;
+  min-width: 175vh;
   height: 100vh;
 }
+
+section{
+  /* position:relative;
+  min-width: 175vh;
+  overflow: hidden; */
+  width: 100vw;
+  height: 100vh;
+
+  /* transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left; */
+}
+
+section:nth-child(1){
+  background-color: magenta;
+  
+  }
+section:nth-child(2){
+  background-color: orange;
+  transition: 2s all ease;
+} 
+section:nth-child(3){
+  background-color: blueviolet;
+}
+section:nth-child(4){
+  background-color: lightskyblue;
+}
+
+
+.fadeout {
+	opacity: 0;
+}
+.fadein {
+	opacity: 1;
+}
+
+
+
+#one{
+  /* width: 6000px; */
+}
+#two{
+  /* background-color:#262626; */
+  
+  /* transition-property: opacity, visibility;
+  transition-duration: 3s;
+  transition-timing-function: ease-in; */
+}
+#poppies{
+  height: 900px;
+}
+
+
+#three{
+  /* background-color:aqua;
+  opacity: 20%; */
+}
+#four{
+  /* background-color:purple; */
+}
+
 
 /*// overlays // */
 .hidden {
@@ -113,29 +145,6 @@ header{
 }
 
 
-/*// section 2 //*/
-#one{
-  /* width: 6000px; */
-}
-#two{
-  background-color:#262626;
-  
-  /* transition-property: opacity, visibility;
-  transition-duration: 3s;
-  transition-timing-function: ease-in; */
-}
-#poppies{
-  height: 900px;
-}
-
-
-#three{
-  background-color:aqua;
-  opacity: 20%;
-}
-#four{
-  background-color:purple;
-}
 /* /////////////////////////// CONTENT /////////////////////////////// */
 
 .content-container{
