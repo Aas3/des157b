@@ -45,74 +45,90 @@
     // }
 
     
-    window.addEventListener('load', function(){
-
-        // const sections = document.querySelectorAll('section');
-        // let sectionLeft = [];
-        // let documentLeft;
-        // let counter = 0;
-
-        // sections.forEach(function(section){
-        // sectionLeft.push(Math.floor(section.getBoundingClientRect().left) + window.pageXOffset);
-        // });
-
-        // window.addEventListener('scroll', function(){
-        // documentLeft = window.pageXOffset;
-
-        // if (documentLeft > sectionLeft[counter]){
-        //     sections[counter].classList.remove('active');
-        //     counter++;
-        //     sections[counter].classList.add('active');
-        // } else if (documentLeft < sectionLeft[counter - 1]){
-        //     sections[counter].classList.remove('active');
-        //     counter--;
-        //     sections[counter].classList.add('active');
-        // }
-        // });
+    // window.addEventListener('load', function(){
         
-        const sections = document.querySelectorAll('section');
-        let sectionLeft = [];
-        let documentLeft;
-        let counter = 0;
-        const two = document.querySelector('#two');
-        const sectionWidth = document.querySelector('section').offsetWidth;
+    //     const sections = document.querySelectorAll('section');
+    //     let sectionLeft = [];
+    //     let documentLeft;
+    //     let counter = 0;
+    //     const two = document.querySelector('#two');
+    //     const sectionWidth = document.querySelector('section').offsetWidth;
 
 
-
-        sections.forEach(function(section){
-              sectionLeft.push(Math.floor(section.getBoundingClientRect().left) + window.pageXOffset);
-        });
+    //     sections.forEach(function(section){
+    //           sectionLeft.push(Math.floor(section.getBoundingClientRect().left) + window.pageXOffset);
+    //     });
   
-        window.addEventListener('scroll', function(){
-        documentLeft = window.pageXOffset;
+    //     window.addEventListener('scroll', function(){
+    //     documentLeft = window.pageXOffset;
     
-        if (documentLeft > sectionLeft[counter]){
+    //     if (documentLeft > sectionLeft[counter]){
          
-                counter++;
-                console.log(`scrolling right ${counter}`);
+    //             counter++;
+    //             console.log(`scrolling right ${counter}`);
                
       
-            } else if (counter > 1 && documentLeft < sectionLeft[counter-1]){
+    //         } else if (counter > 1 && documentLeft < sectionLeft[counter-1]){
            
-                counter--;
-                console.log(`scrolling left ${counter}`)
-            }
+    //             counter--;
+    //             console.log(`scrolling left ${counter}`)
+    //         }
   
-            switch(counter){
-              case 1: sectionTwo(); break;
-              case 2: sectionThree(); break;
-              case 3: sectionFour(); break;
-              default:break;
-            }
+    //         switch(counter){
+    //           case 1: sectionTwo(); break;
+    //           case 2: sectionThree(); break;
+    //           case 3: sectionFour(); break;
+    //           default:break;
+    //         }
 
-            function sectionTwo(){
-               if (window.scrollX < sectionWidth){
-                  two.className = 'fadeout';
-                } else {
-                  two.className = 'fadein'
-                }
-              }
-        })
-    });
+    //         function sectionTwo(){
+    //            if (window.scrollX < sectionWidth){
+    //               two.className = 'fadeout';
+    //             } else {
+    //               two.className = 'fadein'
+    //             }
+    //         }
+    //     })
+
+    // });
+
+
+    let pageLeft;
+    let counter = 1;
+    let prevCounter = 1;
+    const sections = document.querySelectorAll('section');
+
+    let sectionLeft = [];
+    let documentLeft;
+    const two = document.querySelector('#two');
+    const sectionWidth = document.querySelector('section').offsetWidth;
+
+    pageLeft = window.pageXOffset;
+
+    window.addEventListener('load',function(){
+        sections.forEach(function(section){
+            sectionLeft.push(Math.floor(section.getBoundingClientRect().top) + window.pageXOffset);
+      });
+      console.log(sectionLeft);
+    })
+
+    // if the user is scrolling down the page...
+    if (pageLeft > sectionLeft[counter]) {
+        counter++;
+        console.log(`scrolling right ${counter}`);
+    }
+    // if the user is down the page and scrolling up
+    else if (counter > 1 && pageLeft < sectionLeft[counter - 1]) {
+        counter--;
+        console.log(`scrolling left ${counter}`);
+    }
+    // when the section changes...
+    if (counter != prevCounter) {
+        prevCounter = counter;
+    }
+
+
+    // end glenda added
+     // end window scroll function
    
 })();
