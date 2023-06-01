@@ -19,32 +19,6 @@
     //     section.className = 'showing';
     // });
 
-    // document.addEventListener('scroll', function() {
-    //     var section = document.getElementById('two');
-    //     section.className = 'showing';
-    // });
-    
-
-
-    // ScrollReveal().reveal('.headline');
-
-    // Initialize ScrollReveal
-    // ScrollReveal().reveal('.fade-in', {
-    //     duration: 1000,     // Duration of the animation in milliseconds
-    //     distance: '50px',   // Distance the element moves in pixels
-    //     easing: 'ease-out', // Easing function for the animation
-    //   });
-
-    // window.addEventListener('scroll', function() {
-    //     const parallaxElements = document.querySelectorAll('.parallax-element');
-    //     parallaxElements.forEach(element => {
-    //       const speed = parseFloat(element.getAttribute('data-speed'));
-    //       const yPos = -window.pageYOffset * speed;
-    //       element.style.transform = `translateY(${yPos}px)`;
-    //     });
-    // }
-
-    
     // window.addEventListener('load', function(){
         
     //     const sections = document.querySelectorAll('section');
@@ -107,26 +81,28 @@
 
     window.addEventListener('load',function(){
         sections.forEach(function(section){
-            sectionLeft.push(Math.floor(section.getBoundingClientRect().top) + window.pageXOffset);
+            sectionLeft.push(Math.floor(section.getBoundingClientRect().left) + window.pageXOffset);
       });
       console.log(sectionLeft);
     })
 
-    // if the user is scrolling down the page...
-    if (pageLeft > sectionLeft[counter]) {
-        counter++;
-        console.log(`scrolling right ${counter}`);
-    }
-    // if the user is down the page and scrolling up
-    else if (counter > 1 && pageLeft < sectionLeft[counter - 1]) {
-        counter--;
-        console.log(`scrolling left ${counter}`);
-    }
-    // when the section changes...
-    if (counter != prevCounter) {
-        prevCounter = counter;
-    }
 
+    window.addEventListener('wheel',function(){
+        // if the user is scrolling down the page...
+        if (pageLeft > sectionLeft[counter]) {
+            counter++;
+            console.log(`scrolling right ${counter}`);
+        }
+        // if the user is down the page and scrolling up
+        else if (counter > 1 && pageLeft < sectionLeft[counter - 1]) {
+            counter--;
+            console.log(`scrolling left ${counter}`);
+        }
+        // when the section changes...
+        if (counter != prevCounter) {
+            prevCounter = counter;
+        }
+    })
 
     // end glenda added
      // end window scroll function

@@ -1,0 +1,137 @@
+
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+
+  /* opacity: 60%; */
+}
+
+#myVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  /* opacity: 60%; */
+}
+
+/* /////////////////////////// OVERLAY /////////////////////////////// */
+
+body{
+  background-color: #262626;
+}
+
+#overlay{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: #3BBCD9;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.showing {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* /////////////////////////// CONTENT /////////////////////////////// */
+
+#js-scroll{
+  /* text-align: left; */
+  /* background-color: #262626; */
+}
+
+.poppies{
+  height: 60px;
+}
+.o-image{
+  /* background-color: #262626; */
+}
+.data-scroll-section{
+  /* background-color: #262626; */
+}
+
+section{
+  background-color: #262626;
+}
+
+#title1{
+  font-size: 100%;
+  text-align: center;
+  color: aliceblue;
+  padding-right: 200px;
+  padding-left: 100px;
+}
+
+.scrollWords{
+  /* font-size: 100px;
+  padding-top: 100px;
+  opacity: 50%;
+  color: aliceblue; */
+}
+
+.sec1{
+  text-align: left;
+  font-size: 60px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.sec2{
+  /* text-align: left;
+  font-size: 60px;
+  padding-top: 100px; */
+}
+.sec3{
+  text-align: left;
+  font-size: 40px;
+  padding-right: 100px;
+  padding-left: 100px;
+  /* margin: 10px; */
+}
+/* .infoSec{
+  background-color: #262626;
+} */
+
+.o-image_wrapper-full{
+  text-align: left;
+  font-size: 60px;
+  padding-top: 600px;
+  /* background-color: #262626; */
+  color: white;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.o-image{
+  background-color:none;
+}
+
+/*///////////////////// CSS animtions ///////////////////////*/
+.ml12 {
+  /* font-weight: 200; */
+  /* font-size: 1.8em; */
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+  
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
