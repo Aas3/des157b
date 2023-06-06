@@ -118,10 +118,26 @@ audio{
 .imageHover{
 
 }
-#pop{
-  background-color: blue;
-  height: 100px;
-  width: 100px;
+
+.textOverlayContainer p{
+  /* padding: 100px; */
+  height: 300px;
+  width: 400px;
+  font-size: 40px;
+  text-align: center;
+}
+.pop{
+  background-color: palevioletred;
+  height: 300px;
+  width: 400px;
+  z-index: 3;
+  
+}
+
+img:hover{
+  border: yellow;
+  border-style:outset;
+  border-width: 10px;
 }
 
 

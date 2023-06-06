@@ -9,7 +9,7 @@
 
     // document.getElementById('myAudio').loop = true;
 
-    document.querySelectorAll(".imageHover").addEventListener('hover', function (e){
+    document.querySelector(".popHover").addEventListener('mouseenter', function (e){
         e.preventDefault();
         document.getElementById('pop').className = 'showing';
     })
