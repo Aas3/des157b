@@ -1,0 +1,221 @@
+/* /////////////////////////// PAGE /////////////////////////////// */
+body{
+  background-color: #262626;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+#vidOverlay{
+  background-color: #262626;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  /* opacity: 60%; */
+  /* color: antiquewhite; */
+}
+#myVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 40%;
+}
+
+
+/* /////////////////////////// OVERLAYS /////////////////////////////// */
+
+/* #overlay{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: #3BBCD9;
+} */
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.showing {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* /////////////////////////// CONTENT /////////////////////////////// */
+
+#titleContainer{
+  padding-top: 200px;
+  align-items: center;
+  padding: 150px;
+}
+#title1{
+  font-size: 100%;
+  text-align: right;
+  color: aliceblue;
+  padding-top: 50px;
+  /* padding-right: 200px;
+  padding-left: 100px; */
+}
+
+.sec{
+display: inline-block;
+}
+.sec1{
+  text-align: left;
+  font-size: 60px;
+  padding-right: 100px;
+  padding-left: 100px;
+  /* color: whitesmoke; */
+  /* background-color: aqua; */
+
+}
+
+/*/// Section Backgrounds ///*/
+.secBg{
+  /* background-color: #262626; */
+  color: #262626 !important;
+  opacity: 100% !important;
+  /* text-align: center; */
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secBg1{
+  /* background-color: #262626; */
+  color: #262626 !important;
+  opacity: 100% !important;
+  /* text-align: center; */
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*/// section - NO BG ///*/
+.o-image_wrapper-full{
+  text-align: center;
+  font-size: 60px;
+  padding-top: 250px;
+  color: white;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+.o-image{
+  background-color:none;
+  display: block;
+  /* max-width: 1000px; */
+}
+
+.sec3{
+  text-align: left;
+  font-size: 40px;
+  padding-right: 100px;
+  padding-left: 100px;
+  display: flex;
+  /* width: 2000px; */
+  /* max-width: ; */
+  white-space: normal;
+  word-wrap: break-word;
+  margin: auto;
+  /* margin: 10px; */
+}
+
+
+.textOverlayContainer p{
+  /* padding: 100px; */
+  height: 300px;
+  width: 400px;
+  font-size: 40px;
+  text-align: center;
+}
+.pop{
+  background-color: palevioletred;
+  height: 300px;
+  width: 400px;
+  z-index: 3;
+  
+}
+
+img:hover{
+  border: yellow;
+  border-style:outset;
+  border-width: 10px;
+}
+
+
+
+.image-container {
+  opacity: 0;
+  transform: translateY(20vh);
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, transform;
+}
+
+.image-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.poppies{
+  height: 60px;
+}
+
+section{
+  background-color: #262626;
+}
+
+h3{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+/* p{
+  max-width: 1000px;
+} */
+
+/*///////////////////// CSS Animtions Libraries ///////////////////////*/
+/* h3 */
+.ml13 {
+  font-size: 1.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-weight: 600;
+}
+
+.ml13 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.footnote {
+  text-align: left;
+  padding-right: 100px;
+  padding-left: 100px;
+  display: flex;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+
+
+
+
+
+
